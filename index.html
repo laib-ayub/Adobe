@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Sidebar</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (Optional for icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom CSS for sidebar -->
+    <style>
+        /* Ensure the body background is white */
+     
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center pt-0" style="background-color: rgb(255, 217, 0); padding: 10px;">
+        <h6>Creative Cloud All Apps now available at a special price.
+            <button class="m-2 p-2"
+                style="background-color: rgb(255, 217, 0); border-radius: 10px; border: 3px solid black;"> View plans
+                and pricing</button>
+        </h6>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+            <a class="navbar-brand" href="#">
+                <!-- <img src="your-logo-url.png" alt="Logo" style="width: 40px; height: auto;"> -->
+                <h5 class="text-danger mt-1 fw-bold">Adobe</h5>
+            </a>
+
+            <!-- Center Empty Space -->
+            <div class="mx-auto"></div>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admin console</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Compare Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Free trail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-success" type="button">Buy NOw</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <i class="bi bi-person" style="font-size: 24px; margin-right: 10px;"></i>
+                <button class="btn btn-outline-success" type="button">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Overlay for the sidebar -->
+    <div id="overlay" class="overlay" onclick="closeNav()"></div>
+
+    <div class="container-fluid p-0 mt-0" style="overflow-x: hidden;">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 bg-dark text-white d-flex flex-column p-5 text-center justify-content-center">
+                <h3>Adobe Creative Cloud</h3>
+                <h6>Creative Cloud for teams</h6>
+                <br>
+                <h1>Creative plans. Designed for small businesses.</h1>
+                <p>Adobe Creative Cloud for teams plans deliver world-class creative apps plus exclusive features made
+                    for small and midsize businesses. Get up to 9 licences at a lower price to supercharge productivity
+                    and
+                    collaboration across your creative and marketing teams and save 49% for the first year.</p>
+                <p>
+                    Just Regularly at ₹7,130.00/mo Alternatively at ₹3,566.00/mo excl. GST. See terms.</p>
+                <div class="div">
+                    <button class="btn btn-primary" type="button">Free trial</button>
+                    <button class="btn btn-secondary" type="button">Buy now</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 p-0">
+                <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/creative-cloud.svg"
+                    alt="Adobe Creative Cloud" class="img-fluid w-100 h-100">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container p-3">
+        <div class="div text-center">
+            <h5>Explore Adobe Creative Cloud for medium and large businesses. <a href="http://"
+                    class="text-decoration-none text-dark">Learn more</a> </h5>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-dark text-center p-5">
+        <h5 class="text-white">Jump To</h5>
+        <br>
+        <p><a href="http://" class="text-white">Top Benifits</a></p>
+        <br>
+        <p><a href="http://" class="text-white">Whats included</a></p>
+        <br>
+        <p class="mb-"><a href="http://" class="text-white">Adobe Creative Cloud for teams</a></h5>
+    </div>
+    <div class="container-fluid text-center text-white p-5 mb-5" style="background-color: #000000;">
+        <h3>Why do small businesses choose Creative Cloud for teams?</h3>
+
+        <!-- Row for 4 columns -->
+        <div class="row mt-5">
+
+            <!-- Column 1 -->
+            <div class="col-12 col-md-3">
+                <div class="mb-3">
+                   
+                    <i class="bi bi-app-indicator" style="font-size: 40px;"></i>
+                </div>
+                <h6>Powerful apps and generative AI</h6>
+                <p>Plans come with the apps you need to create professional content for your brand, including Adobe
+                    Firefly and Adobe Express.</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-12 col-md-3">
+                <div class="mb-3">
+                    <i class="bi bi-gear" style="font-size: 40px;"></i>
+                </div>
+                <h6>Productivity tools</h6>
+                <p>Work faster and smarter with features like team libraries, exclusive creative assets, and learning
+                    resources.</p>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-12 col-md-3">
+                <div class="mb-3">
+                    <i class="bi bi-person-check" style="font-size: 40px;"></i>
+                </div>
+                <h6>Seamless collaboration</h6>
+                <p>Discover features that ensure brand consistency, speed up reviews, and let you restore previous
+                    versions of creative work.</p>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="col-12 col-md-3">
+                <div class="mb-3">
+                    <i class="bi bi-shield-lock" style="font-size: 40px;"></i>
+                </div>
+                <h6>Total control</h6>
+                <p>Easily manage licences, protect your creative assets and get technical support when you need it.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container text-center p-5">
+        <h1 class="mb-4">See what’s included in the All Apps plan.</h1>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-auto">
+                <button class="btn">Most popular</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn">Photo</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn">Graphic design</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn">Illustration</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn">Video</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn">Social media</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn">All</button>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <!-- Container for 5 boxes -->
+    <div class="container-fluid">
+        <div class="row mt-2 justify-content-center">
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 border d-flex flex-column">
+                    <div class="mb-3">
+                        <i class="bi bi-app-indicator" style="font-size: 40px; color: blue;"></i>
+                    </div>
+                    <h6>Photoshop</h6>
+                    <p>Create amazing brand images and graphics with the industry-standard app. Comes with Adobe Express
+                        and Adobe Firefly generative AI features.</p>
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm m-2 border rounded-3">Free trial</button>
+                            <button class="btn btn-primary btn-sm m-2">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 border d-flex flex-column">
+                    <div class="mb-3">
+                        <i class="bi bi-gear" style="font-size: 40px; color: purple;"></i>
+                    </div>
+                    <h6>Adobe Express</h6>
+                    <p>Quickly and easily make standout brand content from thousands of beautiful templates. Includes
+                        Adobe Firefly generative AI features.</p>
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm m-2 border rounded-3">Free trial</button>
+                            <button class="btn btn-primary btn-sm m-2">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-3 border d-flex flex-column">
+                    <div class="mb-3">
+                        <i class="bi bi-person-check" style="font-size: 40px; color: burlywood;"></i>
+                    </div>
+                    <h6>Illustrator</h6>
+                    <p>Create beautiful logos, icons, infographics, packaging designs and more — and use them anywhere
+                        at any size.</p>
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm m-2 border rounded-3">Free trial</button>
+                            <button class="btn btn-primary btn-sm m-2">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-start">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 border d-flex flex-column">
+                    <div class="mb-3">
+                        <i class="bi bi-app-indicator" style="font-size: 40px; color: aqua;"></i>
+                    </div>
+                    <h6>Premiere Pro</h6>
+                    <p>Create amazing brand images and graphics with the industry-standard app. Comes with Adobe Express
+                        and Adobe Firefly generative AI features.</p>
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm m-2 border rounded-3">Free trial</button>
+                            <button class="btn btn-primary btn-sm m-2">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 border d-flex flex-column">
+                    <div class="mb-3">
+                        <i class="bi bi-gear" style="font-size: 40px; color: red;"></i>
+                    </div>
+                    <h6>Acrobat Pro</h6>
+                    <p>Quickly and easily make standout brand content from thousands of beautiful templates. Includes
+                        Adobe Firefly generative AI features.</p>
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm m-2 border rounded-3">Free trial</button>
+                            <button class="btn btn-primary btn-sm m-2">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <h4 class="text-center">The All Apps plan also includes business features and creative extras.</h4>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-puzzle" style="font-size: 40px;"></i>
+                    <span class="ms-3">Admin Console for managing licences</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-cash-coin" style="font-size: 40px;"></i>
+                    <span class="ms-3">Company asset protection</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-headset" style="font-size: 40px;"></i>
+                    <span class="ms-3">Advanced 24 x 7 tech support</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-image" style="font-size: 40px;"></i>
+                    <span class="ms-3">Shared Adobe Stock licensing</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-file-earmark" style="font-size: 40px;"></i>
+                    <span class="ms-3">Simplified, consolidated billing</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-clock-history" style="font-size: 40px;"></i>
+                    <span class="ms-3">180-day extended version history</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-fonts" style="font-size: 40px;"></i>
+                    <span class="ms-3">Adobe Fonts</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-palette" style="font-size: 40px;"></i>
+                    <span class="ms-3">Adobe Color</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-briefcase" style="font-size: 40px;"></i>
+                    <span class="ms-3">Adobe Portfolio</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-behance" style="font-size: 40px;"></i>
+                    <span class="ms-3">Behance</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-archive" style="font-size: 40px;"></i>
+                    <span class="ms-3">Creative Cloud Libraries</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="box p-4 d-flex align-items-center justify-content-start">
+                    <i class="bi bi-cloud-download" style="font-size: 40px;"></i>
+                    <span class="ms-3">1 TB of cloud storage per user</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="btn d-block mx-auto bg-white text-center rounded-2 border text-dark fw-bold">
+        See Plans and Pricing
+    </button>
+
+    <footer class="justify-content-center text-center py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>Shop for</h5>
+                    <ul class="list-unstyled">
+                        <li>Creative Cloud</li>
+                        <li>Photoshop</li>
+                        <li>Adobe Express</li>
+                        <li>Photography</li>
+                        <li>Premiere Pro</li>
+                        <li>Adobe Stock</li>
+                        <li>Elements Family</li>
+                        <li>Document Cloud</li>
+                        <li>Acrobat</li>
+                        <li>Acrobat Sign</li>
+                        <li>Special offers</li>
+                        <li>View plans and pricing</li>
+                        <li>View all products</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>For Business</h5>
+                    <ul class="list-unstyled">
+                        <li>Creative Cloud for business</li>
+                        <li>Creative Cloud for enterprise</li>
+                        <li>Acrobat for business</li>
+                        <li>For education</li>
+                        <li>Discounts for students and teachers</li>
+                        <li>Schools and universities</li>
+                        <li>Digital Learning Solutions</li>
+                        <li>For mobile</li>
+                        <li>Apps for iOS</li>
+                        <li>Apps for Android</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>Experience Cloud</h5>
+                    <ul class="list-unstyled">
+                        <li>What is Experience Cloud?</li>
+                        <li>Analytics</li>
+                        <li>Experience Manager</li>
+                        <li>Commerce</li>
+                        <li>Marketo Engage</li>
+                        <li>Workfront</li>
+                        <li>Terms of Use</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li>Download and install</li>
+                        <li>Help Centre</li>
+                        <li>Adobe Community</li>
+                        <li>Enterprise Support</li>
+                        <li>Genuine software</li>
+                        <li>Resources</li>
+                        <li>Adobe Blog</li>
+                        <li>Adobe Developer</li>
+                        <li>Adobe Account</li>
+                        <li>Log in to your account</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>Adobe</h5>
+                    <ul class="list-unstyled">
+                        <li>About</li>
+                        <li>AI Overview</li>
+                        <li>Careers</li>
+                        <li>Newsroom</li>
+                        <li>Corporate responsibility</li>
+                        <li>Investor Relations</li>
+                        <li>Supply chain</li>
+                        <li>Trust Centre</li>
+                        <li>Events</li>
+                        <li>Diversity and inclusion</li>
+                        <li>Integrity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid text-center  mb-0">
+            <p>© 2023 Adobe. All rights reserved. | <a href="#" class="text-decoration-none">Privacy</a> | <a href="#"
+                    class="text-decoration-none">Terms of Use</a></p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS to control sidebar -->
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidebar").style.left = "0";
+            document.getElementById("overlay").classList.add("open");
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.left = "-250px";
+            document.getElementById("overlay").classList.remove("open");
+        }
+    </script>
+
+</body>
+
+</html>

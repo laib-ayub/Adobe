@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000 !important;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+    color: #000000 !important;
+}
+
+/* Sidebar close button */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+    transition: 0.5s;
+}
+
+.overlay.open {
+    display: block;
+}
+
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+
+    }
+
+    .navbar-toggler {
+        display: none;
+
+    }
+}
+
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: none;
+
+    }
+}
+
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #dee7eee7;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer ul li {
+    font-size: 0.9rem;
+
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
